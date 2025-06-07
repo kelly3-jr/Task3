@@ -41,7 +41,7 @@ exports.deleteUser = catchAsync(async (req, res) => {
   res.json({ message: 'User deleted successfully' });
 });
 
-// Q26-27. Enhanced getUsers with pagination and search
+// Q26 Enhanced getUsers with pagination and search
 
 exports.getUsers = catchAsync(async (req, res) => {
   let { page = 1, limit = 5, search = '' } = req.query;
